@@ -7,4 +7,11 @@
 # 3. SMTP
 # 4. IRC
 
+<<<<<<< HEAD
 PROTOCOL=3
+=======
+PROTOCOL=0
+
+# Don't modify the next line
+echo "PROTOCOL=${PROTOCOL}}" >> "$GITHUB_ENV"
+>>>>>>> origin/main
