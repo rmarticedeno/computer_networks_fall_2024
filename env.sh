@@ -9,5 +9,7 @@
 
 PROTOCOL=3
 
+echo "PROTOCOL=${PROTOCOL}"
+
 # Don't modify the next line
 echo "PROTOCOL=${PROTOCOL}" >> "$GITHUB_ENV"
