@@ -7,7 +7,7 @@
 # 3. SMTP
 # 4. IRC
 
-PROTOCOL=4
+PROTOCOL=1
 
 echo "PROTOCOL=${PROTOCOL}"
 
