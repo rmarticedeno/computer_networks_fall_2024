@@ -7,4 +7,4 @@
 # 3. SMTP
 # 4. IRC
 
-PROTOCOL=0
+PROTOCOL=3
