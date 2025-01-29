@@ -1,9 +1,9 @@
 import subprocess, sys
 
 def make_test(args, expeteted_output, error_msg):
-    command = -f"./run.sh {args}"
+    command = f"./run.sh {args}"
 
-    output = subprocess.run(command, capture_output=True, text=True)
+    output = subprocess.run([x for x in command.split(' ')], capture_output=True, text=True)
 
     if not all([x in output for x in expeteted_output]):
         print(error_msg)
@@ -34,9 +34,9 @@ tests = [
 succeed = True
 
 for x in tests:
-    suceed = suceed and make_test(x[0],x[1],x[2])
+    succeed = succeed and make_test(x[0],x[1],x[2])
 
-if not suceed:
+if not succeed:
     print("Errors ocurred during tests process")
     sys.exit(1)
 
